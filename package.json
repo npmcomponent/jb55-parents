@@ -1,33 +1,14 @@
 {
-  "name": "parents",
-  "description": "",
-  "version": "0.0.0",
-  "repository": {
-    "url": "git://github.com/jb55/parents.git"
-  },
+  "name": "jb55-parents",
+  "description": "Return all parents of an element",
+  "version": "0.0.1",
+  "keywords": [
+    "parent",
+    "parents"
+  ],
   "main": "index.js",
-  "scripts": {
-    "test": "make sauce"
+  "dependencies": {
+    "yields-traverse": "git://github.com/npmcomponent/yields-traverse.git"
   },
-  "testling": {
-    "harness": "mocha",
-    "browsers": [
-      "ie/8..latest",
-      "firefox/3.5", "firefox/latest", "firefox/nightly",
-      "chrome/10", "chrome/latest", "chrome/canary",
-      "opera/12..latest",
-      "opera/next",
-      "safari/5.1..latest",
-      "ipad/6.0..latest",
-      "iphone/6.0..latest",
-      "android-browser/4.2..latest"
-    ],
-    "preprocess": "make build",
-    "scripts": ["build/*.js", "test/*.js"]
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "mocha": "*",
-    "component": "*"
-  }
+  "license": "MIT"
 }
